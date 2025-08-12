@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cssstuff/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    
+    <section>
+        <div class="buttons">
+            <h2 style="word-spacing: 100vw;"><a href="#">Test</a></h2>
+            <h2 style="word-spacing: 100vw;"><a href="#">Test</a></h2>
+            <h2 style="word-spacing: 100vw;"><a href="#">Test</a></h2>
+            <h2 style="word-spacing: 100vw;"><a href="#">Test</a></h2>
+        </div>
+        <div class="container">
+            
+            <h1>Hello, name's Syakir and I am a <span class="auto-type"></span>.</h1>
+        </div>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["Game Developer", "Writer", "PCB Designer", "Electronics Technician"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            })
+
+        </script>
+    </section>
+
+    <section>
+            <div class="bg">
+                <div>
+                    <div class="blur"></div>
+                    <div class="hidden">
+                        <div class="image1"><img src="./cssstuff/bgimages/HTMLGameProject1.png" width="500"></div>
+                        <div class="image2"><img src="./cssstuff/bgimages/HTMLGameProject2.png" width="700"></div>
+                        <div class="image3"><img src="./cssstuff/bgimages/HTMLGameProject3.png" width="800"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h1>I am a solo <span>Game Developer</span> with 3 years of experience.</h1>
+                <h1>Mostly 2D but played around with 3D for a few of my projects.</h1>
+                <div><h2>Check out my published projects <a href="https://exdanny.itch.io/">here</a>!</h2></div>
+            </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Automatic Text Change</title>
+</head>
+<body>
+
+<p id="changingText">Initial text.</p>
+
+<script>
+const texts = ["Text One", "Text Two", "Text Three", "Text Four"];
+let currentIndex = 0;
+const textElement = document.getElementById("changingText");
+
+function cycleText() {
+  textElement.innerHTML = texts[currentIndex];
+  currentIndex = (currentIndex + 1) % texts.length; // Loop back to start
+}
+
+setInterval(cycleText, 2000); // Change text every 2 seconds (2000 milliseconds)
+</script>
+
+</body>
+</html>
