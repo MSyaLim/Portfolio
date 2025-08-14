@@ -3,101 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./cssstuff/style.css">
-    <title>portfolio</title>
+    <title>Portfolio</title>
 </head>
 <body>
+    
+    <section>
+        <div class="buttons">
+            <h2 style="word-spacing: 100vw;"><a href="#">Test</a></h2>
+            <h2 style="word-spacing: 100vw;"><a href="#">Test</a></h2>
+            <h2 style="word-spacing: 100vw;"><a href="#">Test</a></h2>
+            <h2 style="word-spacing: 100vw;"><a href="#">Test</a></h2>
+        </div>
+        <div class="container">
+            
+            <h1>Hello, name's Syakir and I am a <span class="auto-type"></span>.</h1>
+        </div>
 
-  <!-- Header / Navigation -->
-  <header>
-    <nav class="nav-container">
-      <a href="#page1">Page 1</a>
-      <a href="#page2">Page 2</a>
-      <a href="#page3">Page 3</a>
-      <a href="#page4">Page 4</a>
-      <a href="./pages/mystory.html">My Story</a>
-      <a href="./pages/skills.html">Skills</a>
-      <a href="#">Socials1</a>
-      <a href="#">Socials2</a>
-    </nav>
-  </header>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content blur-box">
-      <h1>Hello, I'm Syakir and</h1>
-      <h2>I am a <span class="auto-type"></span></h2>
-    </div>
-  </section>
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["Game Developer", "Writer", "PCB Designer", "Electronics Technician"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            })
 
-  <!-- About Section -->
-  <section class="about about1">
-    <div class="about-content" id="page1">
-      <h1>I am a solo <span>Game Developer</span> with 3 years of experience.</h1>
-      <h2>I use Godot, Aseprite, and Blender</h2>
-      <p>Check out my published projects!</p>
-      <a href="https://exdanny.itch.io" target="_blank" class="icon-link">
-        <i class="fab fa-itch-io icon-img"></i>
-        itch.io
-      </a>
-    </div>
-  </section>
+        </script>
+    </section>
 
-  <!-- Optional: Typed.js Script -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-    new Typed(".auto-type", {
-      strings: ["Game Developer.", "Writer.", "PCB Designer.", "Tech Enthusiast.", "Hardware Designer.", "DIY Hardware Maker."],
-      typeSpeed: 50,
-      backSpeed: 50,
-      loop: true
-    });
-  </script>
-
-  <!-- About Section2 -->
-  <section class="about about2 blur-box">
-    <div class="about-content" id="page2">
-      <h1>I am a <span>Writer</span> with 1 year of experience.</h1>
-      <h2>Check out my ongoing novel down below!</h2>
-        <a href="https://www.wattpad.com/story/396872201-heavenly-hell-prison" target="_blank">Wattpad</a>
-        <a href="#" target="_blank">Wattpad</a>
-        <a href="#" target="_blank">Wattpad</a>
-        <a href="#" target="_blank">Wattpad</a>
-    </div>
-  </section>
-
-  <!-- About Section3 -->
-  <section class="about about3 blur-box">
-    <div class="about-content" id="page3">
-      <h1>I am a <span class="auto-type2"></span> with 2 years of experience.</h1>
-      <h2>Check out my innovations and schematics below!</h2>
-      <a href="#" target="_blank">Schematic</a>
-      <a href="#" target="_blank">Projects</a>
-      <a href="#" target="_blank">PCB Designs</a>
-      <a href="#" target="_blank">Completed</a>
-    </div>
-  </section>
-
-  <!-- Optional: Typed.js Script -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-    new Typed(".auto-type2", {
-      strings: ["PCB Designer", "Tech Enthusiast", "Hardware Designer", "DIY Hardware Maker"],
-      typeSpeed: 50,
-      backSpeed: 50,
-      loop: true
-    });
-  </script>
-
-  <!-- About Section4 -->
-  <section class="about about4 blur-box">
-    <div class="about-content" id="page4">
-      <h1>I am a <span>PC Builder with hardware assembly skills</span> with 1 year of experience.</h1>
-      <h2>Here are some photos from my builds!</h2>
-      <a href="#" target="_blank">Build Photos</a>
-    </div>
-  </section>
-
+    <section>
+            <div class="bg">
+                <div>
+                    <div class="blur"></div>
+                    <div class="hidden">
+                        <div class="image1"><img src="./cssstuff/bgimages/HTMLGameProject1.png" width="500"></div>
+                        <div class="image2"><img src="./cssstuff/bgimages/HTMLGameProject2.png" width="700"></div>
+                        <div class="image3"><img src="./cssstuff/bgimages/HTMLGameProject3.png" width="800"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h1>I am a solo <span>Game Developer</span> with 3 years of experience.</h1>
+                <h1>Mostly 2D but played around with 3D for a few of my projects.</h1>
+                <div><h2>Check out my published projects <a href="https://exdanny.itch.io/">here</a>!</h2></div>
+            </div>
+    </section>
 </body>
 </html>
