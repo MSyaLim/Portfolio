@@ -201,7 +201,7 @@ html {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 for more/less darkness */
+  background-color: rgba(0, 0, 0, 0.); /* Adjust the 0.5 for more/less darkness */
   z-index: 1;
 }
 
