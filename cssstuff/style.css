@@ -1,85 +1,258 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.container{
-    width: 100%;
-    height: 100vh;
-    background: #2b323c;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1e1e1e;
+  z-index: 999; /* to make sure it stays above everything else */
+}
+body {
+  padding-top: 80px; /* prevent content from hiding behind header very importante*/
+  background: #1e1e1e;
+  color: white;
+  line-height: 1.6;
 }
 
-.buttons{
-    background: #2b323c;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.about-content {
+  scroll-margin-top: 340px;
 }
 
-.container h1{
-    font-size: 50px;
-    font-weight: 600;
+a {
+  color: #00aaff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
+/* colouring the text with span */
 span{
-    color: cadetblue;
+    color: #00aaff;
 }
 
-.container2{
-    font-size: 25px;
-    font-weight: 600;
+/* HTML scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
-.bg{
-    background: #2b323c;
-    color: #fff;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    z-index: -1;
+/* Navigation */
+.nav-container a {
+  background-color: #007be7;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block; /* ensures transform works nicely */
 }
 
-.blur{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    background-color: rgba(127, 127, 127, 0.159);
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(2px);
+.nav-container a:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
 }
 
-.image1{
-
-    position: absolute;
-    transform: translate(50px, 50px);
+/* Hero section */
+.hero {
+  height: 100vh;
+  background-image: url(''); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.image2{
-    position: absolute;
-    transform: translate(100%, 100px);
+.blur-box {
+  background: rgba(255, 255, 255, 0.1);  /* transparent white */
+  backdrop-filter: blur(10px);          /* the frosted glass blur */
+  -webkit-backdrop-filter: blur(10px);  /* Safari support */
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.image3{
-    position: absolute;
-    transform: translate(30px, 120%);
+.hero-content h1 {
+  font-size: 2.5rem;
 }
 
-.content{
-    color: #fff;
-    position: absolute;
-    justify-content: center center;
-    transform: translate(50%, -500%);
+.hero-content h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: cadetblue;
+}
+
+/* About 1 section */
+
+.about1 {
+  height: 100vh;
+  text-align: center;
+  background-image: url('bgimages/htmlpic.png');
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about-content {
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-content h2{
+    color: rgb(214, 214, 214);
+}
+
+.about h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about h2 {
+  font-size: 1.5rem;
+}
+.about p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* custom button using href links */
+
+.about a {
+  display: inline-flex; /* use flex to align icon and text */
+  align-items: center;
+  background-color: #007be7;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 123, 231, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 1rem;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Add space between icon and text */
+  padding: 0.5rem 1rem;
+  background-color: #007be7;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.only-icon {
+  padding: 0.8rem; /* make it a perfect square-ish button */
+  justify-content: center;
+}
+
+.icon-link:hover {
+  background-color: #005bb5;
+}
+
+.icon-img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+/* About 2 section */
+
+.about2 {
+  height: 100vh;
+  text-align: center;
+  background-image: url('./bgimages/striped-paper-texture.jpg');
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.about2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 for more/less darkness */
+  z-index: 1;
+}
+
+.about2 > * {
+  position: relative;
+  z-index: 2; /* So your text or content sits above the overlay */
+}
+
+/* About 3 section */
+
+.about3 {
+  height: 100vh;
+  text-align: center;
+  background-image: url('');
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* About 4 section */
+
+.about4 {
+  height: 100vh;
+  text-align: center;
+  background-image: url('');
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content h2,
+  .about h1,
+  .about h2,
+  .about p {
+    font-size: 1rem;
+  }
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

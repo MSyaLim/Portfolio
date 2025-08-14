@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bgcolor: #1e1e1e;
+}
+
+body {
+  background-color: var(--bgcolor);
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center;     /* Center horizontally */
+  text-align: center;      /* Center text inside each heading */
+  color: white;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.colourimportant {
+    color: cadetblue;
+}
